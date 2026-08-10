@@ -1,3 +1,18 @@
+// ===== WEBP SUPPORT & HERO IMAGE UPGRADE =====
+(function() {
+  var webp = new Image();
+  webp.onload = webp.onerror = function() {
+    var supportsWebP = webp.height === 1;
+    if (supportsWebP) {
+      document.querySelectorAll('.hero-bg, .cta-bg, .service-card-bg').forEach(function(el) {
+        var bg = el.style.backgroundImage;
+        if (bg) el.style.backgroundImage = bg.replace(/\.jpg/g, '.webp');
+      });
+    }
+  };
+  webp.src = 'data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA';
+})();
+
 // ===== HEADER SCROLL =====
 const header = document.querySelector('.header');
 window.addEventListener('scroll', () => {
