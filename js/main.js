@@ -225,6 +225,27 @@ filterBtns.forEach(btn => {
   });
 });
 
+// ===== PARALLAX SECTION NUMBERS =====
+(function() {
+  var sectionNumbers = document.querySelectorAll('.section-number');
+  if (sectionNumbers.length === 0) return;
+
+  function updateParallax() {
+    var scrollTop = window.scrollY || document.documentElement.scrollTop;
+    sectionNumbers.forEach(function(el) {
+      var parent = el.closest('.section') || el.closest('.stats');
+      if (!parent) return;
+      var rect = parent.getBoundingClientRect();
+      var parentTop = rect.top + scrollTop;
+      var offset = (scrollTop - parentTop) * 0.15;
+      el.style.transform = 'translateY(' + offset + 'px)';
+    });
+  }
+
+  window.addEventListener('scroll', updateParallax, { passive: true });
+  updateParallax();
+})();
+
 // ===== CONTACT FORM =====
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
