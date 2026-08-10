@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Realizace | Spaldon Nabytek - Galerie nasich praci a realizaci</title>
+  <meta name="description" content="Galerie realizaci Spaldon Nabytek - kuchyne na miru, skrine, loznice, obyvaci pokoje, kancelare, stoly, koupelny a dalsi zakazkovy nabytek z prvotrednich materialu.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://spaldon-nabytek.cz/realizace.html">
+
+  <meta property="og:title" content="Realizace a galerie | Spaldon Nabytek">
+  <meta property="og:description" content="Podivejte se na nase realizace - kuchyne, skrine, loznice a dalsi nabytek na miru.">
+  <meta property="og:image" content="https://spaldon-nabytek.cz/assets/images/fotogalerie.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 48 48" fill="none"><rect x="4" y="4" width="40" height="40" rx="2" stroke="#c8a96e" stroke-width="1.5" fill="none"/><path d="M14 34V14h4c3 0 5.5 1 7 3s2 4.5 2 7.5c0 3-0.7 5.5-2 7.5s-4 3-7 3H14z" stroke="#c8a96e" stroke-width="1.5" fill="none"/><path d="M28 14h6M28 24h6M28 34h6" stroke="#c8a96e" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <div class="logo-text">Spaldon<span>Nabytek s.r.o.</span></div>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Uvod</a>
+        <a href="remeslo.html">Remeslo</a>
+        <a href="vyroba.html">Vyroba</a>
+        <a href="materialy.html">Materialy</a>
+        <a href="design.html">Design</a>
+        <a href="realizace.html" class="active">Realizace</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="hero-bg" style="background-image: url('assets/images/fotogalerie.jpg')"></div>
+    <div class="hero-overlay"></div>
+    <div class="page-hero-content">
+      <nav class="breadcrumb">
+        <a href="index.html">Uvod</a>
+        <span class="separator">/</span>
+        <span>Realizace</span>
+      </nav>
+      <h1>Nase realizace</h1>
+      <p>Vas luxusni interier zhotovime z tech nejlepsich prirodnich materialu, masivu, dyhy a kamenne dyhy</p>
+
+      <div class="audio-player" data-audio="assets/audio/presentace.mp3" style="margin-top: 2rem;">
+        <div class="play-icon">
+          <svg class="icon-play" viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+          <svg class="icon-pause" viewBox="0 0 24 24"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
+        </div>
+        <span class="audio-player-text">Poslechnete si</span>
+        <div class="audio-progress"><div class="audio-progress-bar"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Fotogalerie</span>
+        <h2>Ukazky nasich praci</h2>
+        <div class="divider"></div>
+        <p>Prohlizi si nase realizace nabytku na miru. Kazdy kus je originalni a vytvoreny presne dle pozadavku zakaznika.</p>
+      </div>
+
+      <!-- Category Filters -->
+      <div class="gallery-categories fade-in">
+        <button class="gallery-cat-btn active" data-category="all">Vsechny</button>
+        <button class="gallery-cat-btn" data-category="kuchyne">Kuchyne</button>
+        <button class="gallery-cat-btn" data-category="skrine">Skrine</button>
+        <button class="gallery-cat-btn" data-category="loznice">Loznice</button>
+        <button class="gallery-cat-btn" data-category="obyvaci">Obyvaci pokoje</button>
+        <button class="gallery-cat-btn" data-category="kancelare">Kancelare</button>
+        <button class="gallery-cat-btn" data-category="stoly">Stoly</button>
+        <button class="gallery-cat-btn" data-category="koupelny">Koupelny</button>
+        <button class="gallery-cat-btn" data-category="ostatni">Ostatni</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid">
+        <!-- Kuchyne -->
+        <div class="gallery-item fade-in" data-category="kuchyne">
+          <img src="assets/images/fotogalerie.jpg" alt="Kuchyne na miru - luxusni kuchynska linka z masivu" loading="lazy">
+          <div class="gallery-item-overlay"><span>Kuchyne na miru</span></div>
+        </div>
+        <div class="gallery-item fade-in" data-category="kuchyne">
+          <img src="assets/images/materialy.jpg" alt="Moderni kuchyne na miru z prirodniho dreva" loading="lazy">
+          <div class="gallery-item-overlay"><span>Kuchyne z masivu</span></div>
+        </div>
+        <div class="gallery-item fade-in" data-category="kuchyne">
+          <img src="assets/images/vyroba.jpg" alt="Detail zpracovani kuchynskeho nabytku" loading="lazy">
+          <div class="gallery-item-overlay"><span>Kuchynske detaily</span></div>
+        </div>
+
+        <!-- Skrine -->
+        <div class="gallery-item fade-in" data-category="skrine">
+          <img src="assets/images/remeslo.jpg" alt="Vestavena skrin na miru s preciznim zpracovanim" loading="lazy">
+          <div class="gallery-item-overlay"><span>Vestavena skrin</span></div>
+        </div>
+        <div class="gallery-item fade-in" data-category="skrine">
+          <img src="assets/images/design.jpg" alt="Satni skrin na miru" loading="lazy">
+          <div class="gallery-item-overlay"><span>Satni skrin</span></div>
+        </div>
+
+        <!-- Loznice -->
+        <div class="gallery-item fade-in" data-category="loznice">
+          <img src="assets/images/fotogalerie.jpg" alt="Loznicovy nabytek na miru - postel a nocni stolky" loading="lazy">
+          <div class="gallery-item-overlay"><span>Loznicovy set</span></div>
+        </div>
+        <div class="gallery-item fade-in" data-category="loznice">
+          <img src="assets/images/remeslo.jpg" alt="Luxusni postel z masivniho dreva" loading="lazy">
+          <div class="gallery-item-overlay"><span>Masivni postel</span></div>
+        </div>
+
+        <!-- Obyvaci pokoje -->
+        <div class="gallery-item fade-in" data-category="obyvaci">
+          <img src="assets/images/design.jpg" alt="Obyvakova stena na miru" loading="lazy">
+          <div class="gallery-item-overlay"><span>Obyvakova stena</span></div>
+        </div>
+        <div class="gallery-item fade-in" data-category="obyvaci">
+          <img src="assets/images/materialy.jpg" alt="Knihovna a obyvakovy nabytek na miru" loading="lazy">
+          <div class="gallery-item-overlay"><span>Knihovna na miru</span></div>
+        </div>
+
+        <!-- Kancelare -->
+        <div class="gallery-item fade-in" data-category="kancelare">
+          <img src="assets/images/vyroba.jpg" alt="Kancelarsky nabytek na miru - pracovni stul a skrine" loading="lazy">
+          <div class="gallery-item-overlay"><span>Kancelar</span></div>
+        </div>
+
+        <!-- Stoly -->
+        <div class="gallery-item fade-in" data-category="stoly">
+          <img src="assets/images/materialy.jpg" alt="Jidelni stul z masivniho dreva" loading="lazy">
+          <div class="gallery-item-overlay"><span>Jidelni stul</span></div>
+        </div>
+        <div class="gallery-item fade-in" data-category="stoly">
+          <img src="assets/images/fotogalerie.jpg" alt="Konferencni stul na miru" loading="lazy">
+          <div class="gallery-item-overlay"><span>Konferencni stul</span></div>
+        </div>
+
+        <!-- Koupelny -->
+        <div class="gallery-item fade-in" data-category="koupelny">
+          <img src="assets/images/remeslo.jpg" alt="Koupelnovy nabytek na miru" loading="lazy">
+          <div class="gallery-item-overlay"><span>Koupelna</span></div>
+        </div>
+
+        <!-- Ostatni -->
+        <div class="gallery-item fade-in" data-category="ostatni">
+          <img src="assets/images/design.jpg" alt="Schodiste a dalsi zakazkovy nabytek" loading="lazy">
+          <div class="gallery-item-overlay"><span>Schodiste</span></div>
+        </div>
+        <div class="gallery-item fade-in" data-category="ostatni">
+          <img src="assets/images/vyroba.jpg" alt="Interierove dvere a oblozeni" loading="lazy">
+          <div class="gallery-item-overlay"><span>Dvere a oblozeni</span></div>
+        </div>
+      </div>
+
+      <!-- Note about more photos -->
+      <div style="text-align: center; margin-top: 3rem;" class="fade-in">
+        <p style="color: var(--color-text-muted); margin-bottom: 1.5rem;">
+          Chcete videt vice nasich realizaci? Navstivte nas profil na Pinterestu nebo nas kontaktujte.
+        </p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="https://www.pinterest.com/SpaldonNabytek/pins/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.236 2.636 7.855 6.356 9.312-.088-.791-.167-2.005.035-2.868.182-.78 1.172-4.97 1.172-4.97s-.299-.6-.299-1.486c0-1.39.806-2.428 1.81-2.428.852 0 1.264.64 1.264 1.408 0 .858-.546 2.14-.828 3.33-.236.995.499 1.806 1.48 1.806 1.778 0 3.144-1.874 3.144-4.58 0-2.393-1.72-4.068-4.177-4.068-2.845 0-4.515 2.135-4.515 4.34 0 .859.331 1.781.745 2.281a.3.3 0 01.069.288l-.278 1.133c-.044.183-.145.222-.335.134-1.249-.581-2.03-2.407-2.03-3.874 0-3.154 2.292-6.052 6.608-6.052 3.469 0 6.165 2.473 6.165 5.776 0 3.447-2.173 6.22-5.19 6.22-1.013 0-1.965-.527-2.291-1.148l-.623 2.378c-.226.869-.835 1.958-1.244 2.621.937.29 1.931.446 2.962.446 5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+            Pinterest
+          </a>
+          <a href="kontakt.html" class="btn btn-primary">Poptat realizaci</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox">
+    <button class="lightbox-close" aria-label="Zavrit">&times;</button>
+    <img src="" alt="">
+  </div>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="cta-bg" style="background-image: url('assets/images/uvod.jpg')"></div>
+    <div class="cta-overlay"></div>
+    <div class="cta-content">
+      <h2>Zaujaly vas nase realizace?</h2>
+      <p>Kontaktujte nas pro nezavaznou konzultaci. Radi vam navrhneme a vyrobime nabytek presne dle vasich predstav.</p>
+      <div class="cta-buttons">
+        <a href="tel:+420604167327" class="btn btn-primary">+420 604 167 327</a>
+        <a href="kontakt.html" class="btn btn-outline">Nezavazna poptavka</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="logo"><div class="logo-text">Spaldon<span>Nabytek s.r.o.</span></div></a>
+          <p>Vyroba luxusniho zakuzkoveho nabytku na miru. Tradicni remeslo, prvotridni materialy a soucasny design.</p>
+        </div>
+        <div>
+          <h4>Navigace</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Uvod</a></li>
+            <li><a href="remeslo.html">Remeslo</a></li>
+            <li><a href="vyroba.html">Vyroba</a></li>
+            <li><a href="materialy.html">Materialy</a></li>
+            <li><a href="design.html">Design</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Nabytek</h4>
+          <ul class="footer-links">
+            <li><a href="realizace.html">Kuchyne</a></li>
+            <li><a href="realizace.html">Skrine</a></li>
+            <li><a href="realizace.html">Loznice</a></li>
+            <li><a href="realizace.html">Obyvaci pokoje</a></li>
+            <li><a href="realizace.html">Kancelare</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Kontakt</h4>
+          <p><strong>Spaldon Nabytek s.r.o.</strong></p>
+          <p>Neratovice, Stredocesky kraj</p>
+          <p><a href="tel:+420604167327">+420 604 167 327</a></p>
+          <p><a href="mailto:info@spaldon-nabytek.cz">info@spaldon-nabytek.cz</a></p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/Spaldonnabytek/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+            <a href="https://www.pinterest.com/SpaldonNabytek/pins/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest"><svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.236 2.636 7.855 6.356 9.312-.088-.791-.167-2.005.035-2.868.182-.78 1.172-4.97 1.172-4.97s-.299-.6-.299-1.486c0-1.39.806-2.428 1.81-2.428.852 0 1.264.64 1.264 1.408 0 .858-.546 2.14-.828 3.33-.236.995.499 1.806 1.48 1.806 1.778 0 3.144-1.874 3.144-4.58 0-2.393-1.72-4.068-4.177-4.068-2.845 0-4.515 2.135-4.515 4.34 0 .859.331 1.781.745 2.281a.3.3 0 01.069.288l-.278 1.133c-.044.183-.145.222-.335.134-1.249-.581-2.03-2.407-2.03-3.874 0-3.154 2.292-6.052 6.608-6.052 3.469 0 6.165 2.473 6.165 5.776 0 3.447-2.173 6.22-5.19 6.22-1.013 0-1.965-.527-2.291-1.148l-.623 2.378c-.226.869-.835 1.958-1.244 2.621.937.29 1.931.446 2.962.446 5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Spaldon Nabytek s.r.o. Vsechna prava vyhrazena.</p>
+        <p>Tvorba webu: <a href="#">Webhunter</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
