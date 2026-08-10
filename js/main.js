@@ -13,6 +13,18 @@
   webp.src = 'data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA';
 })();
 
+// ===== SCROLL PROGRESS BAR =====
+(function() {
+  function updateScrollProgress() {
+    var scrollTop = window.scrollY || document.documentElement.scrollTop;
+    var docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var progress = docHeight > 0 ? scrollTop / docHeight : 0;
+    document.documentElement.style.setProperty('--scroll-progress', progress.toString());
+  }
+  window.addEventListener('scroll', updateScrollProgress, { passive: true });
+  updateScrollProgress();
+})();
+
 // ===== HEADER SCROLL =====
 const header = document.querySelector('.header');
 window.addEventListener('scroll', () => {
@@ -96,6 +108,52 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right').forEach(el => {
   observer.observe(el);
 });
+
+// ===== ANIMATED COUNTER FOR STATS =====
+(function() {
+  var counterObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        var counters = entry.target.querySelectorAll('.counter');
+        counters.forEach(function(counter) {
+          var target = parseInt(counter.getAttribute('data-target'), 10);
+          if (isNaN(target)) return;
+
+          var duration = 2000; // 2 seconds
+          var startTime = null;
+          var startValue = 0;
+
+          function easeOutQuart(t) {
+            return 1 - Math.pow(1 - t, 4);
+          }
+
+          function animate(currentTime) {
+            if (!startTime) startTime = currentTime;
+            var elapsed = currentTime - startTime;
+            var progress = Math.min(elapsed / duration, 1);
+            var easedProgress = easeOutQuart(progress);
+            var currentValue = Math.round(startValue + (target - startValue) * easedProgress);
+            counter.textContent = currentValue;
+
+            if (progress < 1) {
+              requestAnimationFrame(animate);
+            } else {
+              counter.textContent = target;
+            }
+          }
+
+          requestAnimationFrame(animate);
+        });
+        counterObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  var statsSection = document.querySelector('.stats');
+  if (statsSection) {
+    counterObserver.observe(statsSection);
+  }
+})();
 
 // ===== ACTIVE NAV LINK =====
 const currentPage = window.location.pathname.split('/').pop() || 'index.html';
