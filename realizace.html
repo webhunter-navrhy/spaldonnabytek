@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Realizace | Špaldoň Nábytek - Galerie našich prací a realizací</title>
-  <meta name="description" content="Galerie realizací Špaldoň Nábytek - kuchyně na míru, skříně, ložnice, obývací pokoje, kanceláře, stoly, koupelny a další zakázkový nábytek z prvotřídních materiálů.">
+  <meta name="description" content="Galerie realizací Špaldoň Nábytek - kuchyně na míru, vestavěné skříně, obývací pokoje, ložnice, kanceláře, koupelny a další zakázkový nábytek.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://spaldon-nabytek.cz/realizace.html">
 
   <meta property="og:title" content="Realizace a galerie | Špaldoň Nábytek">
-  <meta property="og:description" content="Podívejte se na naše realizace - kuchyně, skříně, ložnice a další nábytek na míru.">
+  <meta property="og:description" content="Podívejte se na naše realizace - kuchyně, vestavěné skříně, obývací pokoje a další nábytek na míru.">
   <meta property="og:image" content="https://spaldon-nabytek.cz/assets/images/fotogalerie.jpg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,15 +26,19 @@
   <header class="header">
     <div class="header-inner">
       <a href="index.html" class="logo">
-        <div class="logo-text">Špaldoň<span>Nábytek s.r.o.</span></div>
+        <div class="logo-monogram">
+          <svg viewBox="0 0 60 50" width="48" height="40">
+            <text x="0" y="38" font-family="'Playfair Display', Georgia, serif" font-size="40" font-weight="700" fill="#c8a96e" letter-spacing="-4">SN</text>
+          </svg>
+          <span class="logo-monogram-text">Špaldoň Nábytek</span>
+        </div>
       </a>
       <nav class="nav">
         <a href="index.html">Úvod</a>
-        <a href="remeslo.html">Řemeslo</a>
-        <a href="vyroba.html">Výroba</a>
-        <a href="materialy.html">Materiály</a>
-        <a href="design.html">Design</a>
+        <a href="kuchyne.html">Kuchyně</a>
+        <a href="nabytek.html">Nábytek</a>
         <a href="realizace.html" class="active">Realizace</a>
+        <a href="o-nas.html">O nás</a>
         <a href="kontakt.html">Kontakt</a>
       </nav>
       <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -45,7 +49,6 @@
   <section class="page-hero">
     <div class="hero-bg" style="background-image: url('assets/images/fotogalerie.jpg')"></div>
     <div class="hero-overlay"></div>
-    <div class="watermark">R</div>
     <div class="page-hero-content">
       <nav class="breadcrumb">
         <a href="index.html">Úvod</a>
@@ -53,7 +56,7 @@
         <span>Realizace</span>
       </nav>
       <h1>Naše realizace</h1>
-      <p>Váš luxusní interiér zhotovíme z těch nejlepších přírodních materiálů, masivu, dýhy a kamenné dýhy</p>
+      <p>Ukázky zakázkového nábytku z naší dílny v Libiši. Kuchyně, skříně, obývací pokoje a další.</p>
 
       <div class="audio-player" data-audio="assets/audio/presentace.mp3" style="margin-top: 2rem;">
         <div class="play-icon">
@@ -66,17 +69,14 @@
     </div>
   </section>
 
-  <div class="separator-ornament"></div>
-
   <!-- GALLERY -->
   <section class="section">
     <div class="container">
-      <span class="section-number">01</span>
       <div class="section-header fade-in">
         <span class="section-label">Fotogalerie</span>
         <h2>Ukázky našich prací</h2>
         <div class="divider"></div>
-        <p>Prohlédněte si naše realizace nábytku na míru. Každý kus je originální a vytvořený přesně dle požadavků zákazníka.</p>
+        <p>Každý kus nábytku je vyrobený na míru a přesně podle požadavků zákazníka.</p>
       </div>
 
       <!-- Category Filters -->
@@ -87,7 +87,6 @@
         <button class="gallery-cat-btn" data-category="loznice">Ložnice</button>
         <button class="gallery-cat-btn" data-category="obyvaci">Obývací pokoje</button>
         <button class="gallery-cat-btn" data-category="kancelare">Kanceláře</button>
-        <button class="gallery-cat-btn" data-category="stoly">Stoly</button>
         <button class="gallery-cat-btn" data-category="koupelny">Koupelny</button>
         <button class="gallery-cat-btn" data-category="ostatni">Ostatní</button>
       </div>
@@ -96,11 +95,11 @@
       <div class="gallery-grid">
         <!-- Kuchyně -->
         <div class="gallery-item fade-in" data-category="kuchyne">
-          <img src="assets/images/fotogalerie.jpg" alt="Kuchyně na míru - luxusní kuchyňská linka z masivu" loading="lazy">
+          <img src="assets/images/fotogalerie.jpg" alt="Kuchyně na míru z vlastní dílny" loading="lazy">
           <div class="gallery-item-overlay"><span>Kuchyně na míru</span></div>
         </div>
         <div class="gallery-item fade-in" data-category="kuchyne">
-          <img src="assets/images/materialy.jpg" alt="Moderní kuchyně na míru z přírodního dřeva" loading="lazy">
+          <img src="assets/images/materialy.jpg" alt="Moderní kuchyně na míru" loading="lazy">
           <div class="gallery-item-overlay"><span>Kuchyně z masivu</span></div>
         </div>
         <div class="gallery-item fade-in" data-category="kuchyne">
@@ -110,7 +109,7 @@
 
         <!-- Skříně -->
         <div class="gallery-item fade-in" data-category="skrine">
-          <img src="assets/images/remeslo.jpg" alt="Vestavěná skříň na míru s precizním zpracováním" loading="lazy">
+          <img src="assets/images/remeslo.jpg" alt="Vestavěná skříň na míru" loading="lazy">
           <div class="gallery-item-overlay"><span>Vestavěná skříň</span></div>
         </div>
         <div class="gallery-item fade-in" data-category="skrine">
@@ -120,38 +119,28 @@
 
         <!-- Ložnice -->
         <div class="gallery-item fade-in" data-category="loznice">
-          <img src="assets/images/fotogalerie.jpg" alt="Ložnicový nábytek na míru - postel a noční stolky" loading="lazy">
+          <img src="assets/images/fotogalerie.jpg" alt="Ložnicový nábytek na míru" loading="lazy">
           <div class="gallery-item-overlay"><span>Ložnicový set</span></div>
         </div>
         <div class="gallery-item fade-in" data-category="loznice">
-          <img src="assets/images/remeslo.jpg" alt="Luxusní postel z masivního dřeva" loading="lazy">
+          <img src="assets/images/remeslo.jpg" alt="Postel z masivního dřeva" loading="lazy">
           <div class="gallery-item-overlay"><span>Masivní postel</span></div>
         </div>
 
         <!-- Obývací pokoje -->
         <div class="gallery-item fade-in" data-category="obyvaci">
-          <img src="assets/images/design.jpg" alt="Obýváková stěna na míru" loading="lazy">
-          <div class="gallery-item-overlay"><span>Obýváková stěna</span></div>
+          <img src="assets/images/design.jpg" alt="Obývací stěna na míru" loading="lazy">
+          <div class="gallery-item-overlay"><span>Obývací stěna</span></div>
         </div>
         <div class="gallery-item fade-in" data-category="obyvaci">
-          <img src="assets/images/materialy.jpg" alt="Knihovna a obývákový nábytek na míru" loading="lazy">
+          <img src="assets/images/materialy.jpg" alt="Knihovna na míru" loading="lazy">
           <div class="gallery-item-overlay"><span>Knihovna na míru</span></div>
         </div>
 
         <!-- Kanceláře -->
         <div class="gallery-item fade-in" data-category="kancelare">
-          <img src="assets/images/vyroba.jpg" alt="Kancelářský nábytek na míru - pracovní stůl a skříně" loading="lazy">
+          <img src="assets/images/vyroba.jpg" alt="Kancelářský nábytek na míru" loading="lazy">
           <div class="gallery-item-overlay"><span>Kancelář</span></div>
-        </div>
-
-        <!-- Stoly -->
-        <div class="gallery-item fade-in" data-category="stoly">
-          <img src="assets/images/materialy.jpg" alt="Jídelní stůl z masivního dřeva" loading="lazy">
-          <div class="gallery-item-overlay"><span>Jídelní stůl</span></div>
-        </div>
-        <div class="gallery-item fade-in" data-category="stoly">
-          <img src="assets/images/fotogalerie.jpg" alt="Konferenční stůl na míru" loading="lazy">
-          <div class="gallery-item-overlay"><span>Konferenční stůl</span></div>
         </div>
 
         <!-- Koupelny -->
@@ -162,8 +151,8 @@
 
         <!-- Ostatní -->
         <div class="gallery-item fade-in" data-category="ostatni">
-          <img src="assets/images/design.jpg" alt="Schodiště a další zakázkový nábytek" loading="lazy">
-          <div class="gallery-item-overlay"><span>Schodiště</span></div>
+          <img src="assets/images/design.jpg" alt="Atypický nábytek na míru" loading="lazy">
+          <div class="gallery-item-overlay"><span>Atypická výroba</span></div>
         </div>
         <div class="gallery-item fade-in" data-category="ostatni">
           <img src="assets/images/vyroba.jpg" alt="Interiérové dveře a obložení" loading="lazy">
@@ -193,15 +182,13 @@
     <img src="" alt="">
   </div>
 
-  <div class="separator-ornament"></div>
-
   <!-- CTA -->
   <section class="cta">
     <div class="cta-bg" style="background-image: url('assets/images/uvod.jpg')"></div>
     <div class="cta-overlay"></div>
     <div class="cta-content">
-      <h2>Zaujaly vás naše realizace?</h2>
-      <p>Kontaktujte nás pro nezávaznou konzultaci. Rádi vám navrhneme a vyrobíme nábytek přesně dle vašich představ.</p>
+      <h2>Máte představu? Rádi ji proměníme v realitu.</h2>
+      <p>Ozvěte se nám. Probereme váš projekt nezávazně a na rovinu.</p>
       <div class="cta-buttons">
         <a href="tel:+420604167327" class="btn btn-primary">+420 604 167 327</a>
         <a href="kontakt.html" class="btn btn-outline">Nezávazná poptávka</a>
@@ -209,40 +196,39 @@
     </div>
   </section>
 
-  <div class="footer-ornament-banner"></div>
-
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-about">
-          <a href="index.html" class="logo"><div class="logo-text">Špaldoň<span>Nábytek s.r.o.</span></div></a>
-          <p>Výroba luxusního zakázkového nábytku na míru. Tradiční řemeslo, prvotřídní materiály a současný design.</p>
+          <a href="index.html" class="logo"><div class="logo-monogram"><svg viewBox="0 0 60 50" width="48" height="40"><text x="0" y="38" font-family="'Playfair Display', Georgia, serif" font-size="40" font-weight="700" fill="#c8a96e" letter-spacing="-4">SN</text></svg><span class="logo-monogram-text">Špaldoň Nábytek</span></div></a>
+          <p>Zakázková výroba nábytku a kuchyní na míru ve vlastní truhlářské dílně v Libiši u Mělníka.</p>
         </div>
         <div>
           <h4>Navigace</h4>
           <ul class="footer-links">
             <li><a href="index.html">Úvod</a></li>
-            <li><a href="remeslo.html">Řemeslo</a></li>
-            <li><a href="vyroba.html">Výroba</a></li>
-            <li><a href="materialy.html">Materiály</a></li>
-            <li><a href="design.html">Design</a></li>
+            <li><a href="kuchyne.html">Kuchyně</a></li>
+            <li><a href="nabytek.html">Nábytek</a></li>
+            <li><a href="realizace.html">Realizace</a></li>
+            <li><a href="o-nas.html">O nás</a></li>
           </ul>
         </div>
         <div>
           <h4>Nábytek</h4>
           <ul class="footer-links">
-            <li><a href="realizace.html">Kuchyně</a></li>
-            <li><a href="realizace.html">Skříně</a></li>
-            <li><a href="realizace.html">Ložnice</a></li>
-            <li><a href="realizace.html">Obývací pokoje</a></li>
-            <li><a href="realizace.html">Kanceláře</a></li>
+            <li><a href="kuchyne.html">Kuchyně na míru</a></li>
+            <li><a href="nabytek.html">Vestavěné skříně</a></li>
+            <li><a href="nabytek.html">Obývací pokoje</a></li>
+            <li><a href="nabytek.html">Ložnice</a></li>
+            <li><a href="nabytek.html">Kanceláře</a></li>
+            <li><a href="nabytek.html">Atypická výroba</a></li>
           </ul>
         </div>
         <div class="footer-contact">
           <h4>Kontakt</h4>
           <p><strong>Špaldoň Nábytek s.r.o.</strong></p>
-          <p>Neratovice, Středočeský kraj</p>
+          <p>Libiš u Mělníka, Středočeský kraj</p>
           <p><a href="tel:+420604167327">+420 604 167 327</a></p>
           <p><a href="mailto:info@spaldon-nabytek.cz">info@spaldon-nabytek.cz</a></p>
           <div class="footer-social">
